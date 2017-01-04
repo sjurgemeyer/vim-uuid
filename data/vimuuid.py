@@ -3,4 +3,4 @@ import uuid
 import vim
 
 uid = uuid.uuid4().urn[9:]
-vim.command('execute "normal I' + uid + '"')
+vim.command(':let generatedUuid = "' + uid + '"')
